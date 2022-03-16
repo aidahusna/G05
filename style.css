@@ -320,6 +320,7 @@ nav ul li a:hover{
   border-radius: 6px;
   outline: none;
   padding-left: 16px;
+  padding-top: 16px;
   transition: all 0.3s ease;
 }
 .box-kontak .message-box textarea:focus,

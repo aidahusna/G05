@@ -30,7 +30,7 @@ nav{
     align-items: center;
     justify-content: space-around;
     padding: 10px 30px;
-    background-color: #fff;
+    background-color: dfe6e9;
     box-shadow: 2px 2px 20px rgba(90,118,253,0.13);
     z-index: 2;
     width: 100%;
@@ -91,8 +91,7 @@ nav ul li a:hover{
 .home-text p{
     font-size: 20px;
     color: #777474;
-    animation-duration: 3s;
-    animation-name: slidein;
+    
 }
 .home-image{
     width: 500px;
@@ -150,7 +149,8 @@ nav ul li a:hover{
     justify-content: center;
 }
 .prosedur-heading h2{
-    line-height: 55px;
+    padding-top: 80px;
+    line-height: 20px;
     font-size: 38px;
     color: #22252e;
     letter-spacing: 1px;
@@ -161,7 +161,9 @@ nav ul li a:hover{
     font-size: 17px;
     color: #777474;
     width: 50%;
-    margin-top: auto;
+    margin-top: 10px;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 .box-container{
     display: flex;
@@ -207,7 +209,7 @@ nav ul li a:hover{
     position: relative;
 }
 .kontak-heading{
-    margin-top: 60px;
+    margin-top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -215,17 +217,20 @@ nav ul li a:hover{
     flex-direction: column;
 }
 .kontak-heading h2{
-    line-height: 55px;
+    padding-top: 100px;
+    line-height: 20px;
     font-size: 38px;
     color:#22252e;
     letter-spacing: 1px;
     font-weight: 700;
-    margin: 0px;
+    margin: 10px;
 }
 .kontak-heading p{
     font-size: 17px;
     color:#777474;
     width:50%;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 .box-kontak{
     display: flex;

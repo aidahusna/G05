@@ -135,6 +135,7 @@ nav ul li a:hover{
     transition: all 0.3s;
 }
 
+
 /*prosedur*/
 .prosedur{
     background-size: auto;
@@ -202,14 +203,14 @@ nav ul li a:hover{
     max-width: 300px;
 }
 
-/*kontak*/
+
+/*kontak/hubungi kami*/
 .kontak{
-    background-size: 1000px;
-    background-position: center;
-    position: relative;
+    margin: 50px 60px;
 }
+/*kontak heading (judul & deskripsi)*/
 .kontak-heading{
-    margin-top: 0px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,49 +218,168 @@ nav ul li a:hover{
     flex-direction: column;
 }
 .kontak-heading h2{
-    padding-top: 100px;
-    line-height: 20px;
+    line-height: 55px;
     font-size: 38px;
     color:#22252e;
     letter-spacing: 1px;
     font-weight: 700;
-    margin: 10px;
+    margin: 0px;
 }
 .kontak-heading p{
     font-size: 17px;
     color:#777474;
-    width:50%;
-    animation-duration: 3s;
-    animation-name: slidein;
-}
-.box-kontak{
-    display: flex;
-    background-color: #fff;
-    box-shadow: 2px 2px 30px 2px rgba(90,118,253,0.15);
-    border-radius: 20px;
-    margin: 20px;
-    flex-grow: 1;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 400px;
-    text-align: center;
+    width:auto;
+    margin-top: auto;
+    margin-bottom: 25px;
 }
 
-/*form*/
-input, textarea {
+/*isi container kontak*/
+.kontak-container{
+  max-width: 1000px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: 2px 2px 30px rgba(90,118,253,0.15);
+}
+
+.kontak-container .box-kontak{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px;
+}
+.box-kontak .image-box{
+  max-width: 55%;
+}
+.box-kontak .image-box img{
+  width: 100%;
+}
+.box-kontak .judul-form{
+  font-size: 22px;
+  font-weight: 500;
+  color: #777474;
+}
+.box-kontak form{
+  width: 40%;
+  margin-right: 30px;
+}
+.box-kontak .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 16px 0;
+  position: relative;
+}
+.box-kontak .input-box input{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 16px;
+  background: #F2F2F2;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.box-kontak .input-box input:focus,
+.box-kontak .input-box input:valid{
+  border-color: #5a76fd;
+  background-color: #fff;
+}
+.box-kontak .input-box label{
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: #636c72;
+  font-size: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+.box-kontak .input-box input:focus ~ label,
+.box-kontak .input-box input:valid ~ label{
+  top: 0;
+  left: 12px;
+  display: 14px;
+  color: #5a76fd;
+  background: #fff;
+}
+.box-kontak .message-box{
+  min-height: 100px;
+  position: relative;
+}
+.box-kontak .message-box textarea{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  resize: none;
+  font-size: 16px;
+  background: #F2F2F2;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  outline: none;
+  padding-left: 16px;
+  transition: all 0.3s ease;
+}
+.box-kontak .message-box textarea:focus,
+.box-kontak .message-box textarea:valid{
+  border-color: #5a76fd;
+  background-color: #fff;
+}
+.box-kontak .message-box label{
+  position: absolute;
+  font-size: 16px;
+  color: #636c72;
+  left: 18px;
+  top: 6px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.box-kontak .message-box textarea:focus ~ label,
+.box-kontak .message-box textarea:valid ~ label{
+  left: 12px;
+  top: -10px;
+  display: 14px;
+  color: #5a76fd;
+  font-size: 16px;
+  background: #fff;
+}
+.box-kontak .input-box input[type="submit"]{
+  color: #fff;
+  background: #5a76fd;
+  padding-left: 0;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.box-kontak .input-box input[type="submit"]:hover{
+  background-color: #6b85ff;
+}
+
+/*responsive untuk kontak kami*/
+@media (max-width:1000px) {
+  .box-kontak .image-box{
+    max-width: 70%;
+  }
+  .box-kontak{
+    padding: 10px 0;
+  }
+}
+@media (max-width:900px) {
+  .box-kontak .image-box{
+    display: none;
+  }
+  .box-kontak form{
     width: 100%;
-    padding: 0.6em;
-    margin-bottom: 1.5em;
-    border-radius: .3em;
-    border: 1px solid gray;
+    margin-left: 30px;
+  }
 }
-label{
-    display: block;
-    font-size: 20px;
-    margin-bottom: 8px;
-}
+
+
+
 /*footer*/
 .container{
     max-width: 1170px;

@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 body{
     margin: 0px;
     padding: 0px;
     font-family: calibri;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
 }
 *{
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 ul{
     list-style: none;
@@ -250,25 +255,132 @@ label{
     font-size: 20px;
     margin-bottom: 8px;
 }
-
 /*footer*/
-footer{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 5%;
-    /*border-top: 1px solid rgba(167, 167, 167, 0.2);*/
-    box-shadow: 2px 2px 30px 2px rgb(90 118 253 / 15%);
+.container{
+    max-width: 1170px;
+    margin: auto;
 }
-footer a,
-footer p,
-footer ul,
-footer li{
-    color: #5e5e5e;
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+ul{
     list-style: none;
 }
+.footer{
+    background-color: #242424;
+    padding: 60px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col p{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #bbb;
+    margin-bottom: 30px;
+}
+.contact {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #bbb;
+    margin-bottom: 30px;
+}
+.contact a span:not(:last-child){
+    margin-bottom: 10px;
+}
 
+.footer-col .contact a{
+    display:inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius:  50%;
+    color: #fff;
+    transition: all 0.5s ease;
+    padding-top: 10px;
+    
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #6b85ff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+
+}
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+    transition: all 0.3s ease;
+    padding-top: 10px;
+}
+
+.footer-col ul li a:hover{
+    color: #fff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display:inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius:  50%;
+    color: #fff;
+    transition: all 0.5s ease;
+    padding-top: 10px;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #fff;
+}
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+@media (max-width: 1100px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 720px) {
+    .footer-col{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
 
 @media (max-width: 1100px){
     nav{
@@ -397,7 +509,7 @@ footer li{
     }
     footer p, a, ul, li{
         font-size: 18px;
-        text-align: center;
+        text-align: left;
     }
     footer{
         padding: 0px 10px;

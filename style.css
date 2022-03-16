@@ -359,7 +359,7 @@ nav ul li a:hover{
   background-color: #6b85ff;
 }
 
-/*responsive untuk kontak kami*/
+/*responsive untuk kontak/hubungi kami*/
 @media (max-width:1000px) {
   .box-kontak .image-box{
     max-width: 70%;
